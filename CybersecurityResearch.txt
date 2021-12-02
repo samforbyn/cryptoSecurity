@@ -1,0 +1,25 @@
+Target Stores 2013 Data Breach
+
+This data breach exposed ~ 110 million people's payment card info, as well as their contact info. Target had 
+initially confirmed that credit and debit card info for ~ 40 million customers had been stolen. A handful
+of weeks later Target confirmed that the email and mailing address for an additional 70 million people had been
+exposed as well. Apparently the hackers broke into Target's network using login credentials stolen from an HVAC
+company that works for several Target locations.
+
+The hackers first gained access to Target's network on November 15, 2013 using a username and password stolen from Fazio 
+Mechanical Services - a Pennsylvania based company specializing in providing refigeration and HVAC systems for 
+Target and similar companies.
+
+The hackers leveraged Fazio's access to Targets network, because Fazio had access rights to carry out tasks like
+remotely monitoring energy consumption & temperatures. Using this leverage, the hackers were able to upload malware 
+programs to the company's POS systems, undetected.
+
+The motivations were most likely to steal peoples information and use while they had access to it. The "tech flaws"
+weren't anything crazy, it was mainly that Target allowed a third party to access their networks without putting 
+in any sort of checks and balances. They also didn't segment their network off for the third party, so by accessing the
+network they had access to it's payment systems as well. Basically ignoring PCI Data Security Standards.
+
+On top of spending $202 million for legal fees and other costs spanning across most of the US, they agreed to tighten
+their digital security. Including maintaining software and encryption programs to safeguard their customers
+personal information. They've apparanetly seperated their cardholder data from the rest of its network, as well as
+pay for an independent assessment of their security measures.
