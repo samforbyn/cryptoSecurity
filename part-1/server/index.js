@@ -7,11 +7,13 @@ app.use(express.json())
 app.use(cors())
 
 const {
+    keyString,
     login,
     register
 } = require('./controllers/auth')
 
 app.post(`/api/login`, login)
 app.post(`/api/register`, register)
+app.post(`/api/keystring`, keyString)
 
 app.listen(4004, () => console.log(`running on 4004`))

@@ -2,6 +2,10 @@ const users = []
 const bcrypt = require("bcryptjs")
 
 module.exports = {
+    keyString: (req, res) => {
+      console.log("KeyStrinG")
+      console.log(req.body)
+    },
     login: (req, res) => {
       console.log('Logging In User')
       console.log(req.body)
@@ -12,7 +16,7 @@ module.exports = {
           if(existingUser){
             let userReturn = {...users[i]}
             delete userReturn.pwHash
-           res.status(200).send(users[i])
+           res.status(200).send(userReturn)
            console.log("YES")
            return
           }
@@ -40,7 +44,7 @@ module.exports = {
         users.push(userObj)
         console.log(req.body, "--- userObj")
         delete req.body.password 
-        res.status(200).send(req.body)
+        res.status(200).send(userObj)
         console.log(userObj, "UPDATED")
     }
 }

@@ -6,6 +6,7 @@ const baseURL = `http://localhost:4004/api`
 
 const login = body => axios.post(`${baseURL}/login`, body).then( res => {
   createUserCard(res.data)
+  alert("Successful Log In")
 }).catch(err => {
   console.log(err)
   alert('Uh oh. Your request did not work.')
@@ -82,5 +83,6 @@ function createUserCard(data) {
     userContainer.appendChild(userCard)
 }
 
+// keyStringForm.addEventListener('submit', kStringSubmit)
 loginForm.addEventListener('submit', loginSubmitHandler)
 registerForm.addEventListener('submit', registerSubmitHandler)
